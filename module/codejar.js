@@ -263,7 +263,7 @@ export function CodeJar(editor, highlight, opt = {}) {
             const after = afterCursor();
             let [padding] = findPadding(before);
             let newLinePadding = padding;
-            // If last symbol is "{" ident new line
+            // If last symbol is opening brace ident new line
             if (options.indentOn.test(before)) {
                 newLinePadding += options.tab;
             }
@@ -275,7 +275,7 @@ export function CodeJar(editor, highlight, opt = {}) {
             } else {
                 legacyNewLineFix(event);
             }
-            // Place adjacent "}" on next line
+            // Place adjacent closing brace on next line
             if (newLinePadding !== padding && options.moveToNewLine.test(after)) {
                 const pos = save();
                 insert('\n' + padding);
@@ -580,7 +580,7 @@ export function CodeJar(editor, highlight, opt = {}) {
     }
 
     function getSelection() {
-        var _a;
+        let _a;
         if (((_a = editor.parentNode) === null || _a === void 0 ? void 0 : _a.nodeType) === Node.DOCUMENT_FRAGMENT_NODE) {
             return editor.parentNode.getSelection();
         }

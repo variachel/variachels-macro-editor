@@ -2,6 +2,7 @@
   "variachels-macro-editor": {
     "ready": "Variachel's Journal v1.0.0 | Ready.",
     "label": "Variachel's Macro Editor",
+    "version": "1.0.0",
     "comment-command": "Comment lines",
     "window-size": "Window size"
   }

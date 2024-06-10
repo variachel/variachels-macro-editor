@@ -1,5 +1,5 @@
-// import {i18n} from './util.js'
-import { CodeJar } from './codejar.js';
+import {i18n} from './util.js'
+import {CodeJar} from './codejar.js';
 import highlight from './highlight.js';
 import javascript from './languages/javascript-min.js';
 
@@ -33,12 +33,12 @@ Hooks.on('renderMacroConfig', (app, html, data) => {
 
     const textarea = html.find('textarea[name="command"]');
     const code = textarea.val();
-    textarea.after('<code class="improved-macro-editor hljs language-javascript"></code>');
+    textarea.after('<code class="variachels-macro-editor hljs language-javascript"></code>');
     textarea.parent().css({position: 'relative'});
     // textarea.after('<div class="editor-container"><code class="improved-macro-editor hljs language-javascript"></code></div>');
     textarea.hide();
 
-    const editorElement = html.find('.improved-macro-editor')[0];
+    const editorElement = html.find('.variachels-macro-editor')[0];
 
     const jar = CodeJar(
         editorElement,
@@ -55,7 +55,7 @@ Hooks.on('renderMacroConfig', (app, html, data) => {
 
 Hooks.on("init", () => {
     game.keybindings.register(VariachelsMacroEditor._moduleName, "comment-command", {
-        name: "improved-macro-editor.comment-command",
+        name: i18n("variachels-macro-editor.comment-command"),
         editable: []
     });
 
@@ -63,7 +63,7 @@ Hooks.on("init", () => {
         VariachelsMacroEditor._moduleName,
         "window-size",
         {
-            name: "improved-macro-editor.window-size",
+            name: i18n("variachels-macro-editor.window-size"),
             scope: "client",
             config: true,
             default: "medium",
@@ -75,4 +75,10 @@ Hooks.on("init", () => {
             type: String
         }
     );
+})
+
+Hooks.on('ready', () => {
+    console.log('Variachel\'s Macro Editor v'
+        + i18n('variachels-macro-editor.version')
+        + ' | Ready');
 })
