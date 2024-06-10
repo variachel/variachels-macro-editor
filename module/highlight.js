@@ -3,7 +3,8 @@
   (c) 2006-2022 undefined and other contributors
   License: BSD-3-Clause
  */
-const hljs = (function () {
+let hljs = (
+    function () {
     'use strict';
 
     const deepFreezeEs6 = {exports: {}};
@@ -2412,6 +2413,7 @@ const hljs = (function () {
          * @param {LanguageFn} languageDefinition
          */
         function registerLanguage(languageName, languageDefinition) {
+            console.log('LANGUAGE', languageName);
             let lang = null;
             try {
                 lang = languageDefinition(hljs);

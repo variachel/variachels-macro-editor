@@ -1,9 +1,24 @@
 {
-  "variachels-macro-editor": {
-    "ready": "Variachel's Journal v1.0.0 | Ready.",
+  "editor": {
+    "ready": "Variachel's Macro Editor v1.0.0 | Ready.",
     "label": "Variachel's Macro Editor",
     "version": "1.0.0",
-    "comment-command": "Comment lines",
-    "window-size": "Window size"
+    "comment-command": "Comment Lines",
+    "window-size": "Window Size",
+    "window-size-hint": "This apply the selected size to the macro window.",
+    "macro-editor-styling": "Change editor style",
+    "macro-editor-styling-hint": "This will change the styling of the macro code editor.",
+
+    "window-size-raw": "window-size",
+    "comment-command-raw": "comment-command",
+    "macro-editor-styling-raw": "macro-editor-styling",
+
+    "agate": "Agate",
+    "atom-one-dark": "Atom One Dark",
+    "codeschool": "Code School",
+    "darkmoss": "Dark Moss",
+    "eva": "Eva",
+    "gradient-light": "Gradient Light",
+    "purebasic": "Pure Basic"
   }
 }

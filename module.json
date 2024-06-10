@@ -16,8 +16,7 @@
     "./module/variachels-macro-editor.js"
   ],
   "styles": [
-    "styles/variachels-macro-editor.css",
-    "styles/atom-one-dark.css"
+    "styles/variachels-macro-editor.css"
   ],
   "languages": [
     {

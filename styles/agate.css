@@ -20,96 +20,96 @@
 */
 
 .hljs {
-    background: #333;
-    color: #fff;
+    background: #333 !important;
+    color: #fff !important;
 }
 
 .hljs-doctag,
 .hljs-meta-keyword,
 .hljs-name,
 .hljs-strong {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .hljs-code,
 .hljs-emphasis {
-    font-style: italic;
+    font-style: italic !important;
 }
 
 .hljs-section,
 .hljs-tag {
-    color: #62c8f3;
+    color: #62c8f3 !important;
 }
 
 .hljs-selector-class,
 .hljs-selector-id,
 .hljs-template-variable,
 .hljs-variable {
-    color: #ade5fc;
+    color: #ade5fc !important;
 }
 
 .hljs-meta-string,
 .hljs-string {
-    color: #a2fca2;
+    color: #a2fca2 !important;
 }
 
 .hljs-attr,
 .hljs-quote,
 .hljs-selector-attr {
-    color: #7bd694;
+    color: #7bd694 !important;
 }
 
 .hljs-tag .hljs-attr {
-    color: inherit;
+    color: inherit !important;
 }
 
 .hljs-attribute,
 .hljs-title,
 .hljs-type {
-    color: #ffa;
+    color: #ffa !important;
 }
 
 .hljs-number,
 .hljs-symbol {
-    color: #d36363;
+    color: #d36363 !important;
 }
 
 .hljs-bullet,
 .hljs-template-tag {
-    color: #b8d8a2;
+    color: #b8d8a2 !important;
 }
 
 .hljs-built_in,
 .hljs-keyword,
 .hljs-literal,
 .hljs-selector-tag {
-    color: #fcc28c;
+    color: #fcc28c !important;
 }
 
 .hljs-code,
 .hljs-comment,
 .hljs-formula {
-    color: #888;
+    color: #888 !important;
 }
 
 .hljs-link,
 .hljs-selector-pseudo,
 .hljs-regexp {
-    color: #c6b4f0;
+    color: #c6b4f0 !important;
 }
 
 .hljs-meta {
-    color: #fc9b9b;
+    color: #fc9b9b !important;
 }
 
 .hljs-deletion {
-    background: #fc9b9b;
-    color: #333;
+    background: #fc9b9b !important;
+    color: #333 !important;
 }
 
 .hljs-addition {
-    background: #a2fca2;
-    color: #333;
+    background: #a2fca2 !important;
+    color: #333 !important;
 }
 
 /* Purposely ignored */
@@ -119,21 +119,21 @@
 .hljs-punctuation {}
 
 .hljs-subst {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* This applies only if HTML auto-merging plugin is enabled by user (#2889) */
 .hljs a {
-    color: inherit;
+    color: inherit !important;
 }
 
 .hljs a:focus,
 .hljs a:hover {
-    color: inherit;
-    text-decoration: underline;
+    color: inherit !important;
+    text-decoration: underline !important;
 }
 
 .hljs mark {
-    background: #555;
-    color: inherit;
+    background: #555 !important;
+    color: inherit !important;
 }

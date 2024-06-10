@@ -8,5 +8,5 @@ export function error(errorText) {
 }
 
 export let i18n = (key) => {
-    return game.i18n.localize(key)
+    return game.i18n.localize(key);
 }
