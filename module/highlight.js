@@ -252,7 +252,7 @@ let hljs = (
         }
 
         closeAllNodes() {
-            while (this.closeNode()) ;
+            while (this.closeNode()) {}
         }
 
         toJSON() {
@@ -387,12 +387,11 @@ let hljs = (
 
     /**
      * @param {RegExp | string } re
-     * @returns {string}
+     * @returns {string | null}
      */
     function source(re) {
         if (!re) return null;
         if (typeof re === "string") return re;
-
         return re.source;
     }
 

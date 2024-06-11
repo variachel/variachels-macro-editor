@@ -378,7 +378,7 @@ export function CodeJar(editor, highlight, opt = {}) {
 
     function handleCommentCommand(event) {
         const context = KeyboardManager.getKeyboardEventContext(event)
-        const binding = game.keybindings.get('improved-macro-editor', 'comment-command')[0];
+        const binding = game.keybindings.get('variachels-macro-editor', 'comment-command')[0];
         if (event.code === binding?.key && binding?.modifiers.every(mod => context.modifiers.includes(mod))) {
 
             preventDefault(event);

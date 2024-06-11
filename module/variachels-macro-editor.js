@@ -45,7 +45,6 @@ function setUpTextArea(html) {
     const code = textarea.val();
     textarea.after('<code class="variachels-macro-editor hljs language-javascript"></code>');
     textarea.parent().css({position: 'relative'});
-    // textarea.after('<div class='editor-container'><code class='improved-macro-editor hljs language-javascript'></code></div>');
     textarea.hide();
 
     const editorElement = html.find('.variachels-macro-editor')[0];
